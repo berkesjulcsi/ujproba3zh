@@ -34,8 +34,8 @@
             label2 = new Label();
             tudnivalokbttn = new Button();
             excelbttn = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            csomagokbttn = new Button();
+            üzletekbttn = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -46,8 +46,8 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(tudnivalokbttn);
             panel1.Controls.Add(excelbttn);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(csomagokbttn);
+            panel1.Controls.Add(üzletekbttn);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
@@ -101,23 +101,25 @@
             excelbttn.UseVisualStyleBackColor = true;
             excelbttn.Click += excelbttn_Click;
             // 
-            // button2
+            // csomagokbttn
             // 
-            button2.Location = new Point(12, 118);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            csomagokbttn.Location = new Point(12, 118);
+            csomagokbttn.Name = "csomagokbttn";
+            csomagokbttn.Size = new Size(75, 23);
+            csomagokbttn.TabIndex = 1;
+            csomagokbttn.Text = "Csomagok";
+            csomagokbttn.UseVisualStyleBackColor = true;
+            csomagokbttn.Click += csomagokbttn_Click;
             // 
-            // button1
+            // üzletekbttn
             // 
-            button1.Location = new Point(12, 89);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            üzletekbttn.Location = new Point(12, 89);
+            üzletekbttn.Name = "üzletekbttn";
+            üzletekbttn.Size = new Size(75, 23);
+            üzletekbttn.TabIndex = 0;
+            üzletekbttn.Text = "Üzletek";
+            üzletekbttn.UseVisualStyleBackColor = true;
+            üzletekbttn.Click += üzletekbttn_Click;
             // 
             // Form1
             // 
@@ -143,8 +145,8 @@
         private Button button5;
         private Button tudnivalokbttn;
         private Button excelbttn;
-        private Button button2;
-        private Button button1;
+        private Button csomagokbttn;
+        private Button üzletekbttn;
         private Button ügyfelekbttn;
     }
 }
